@@ -7,9 +7,11 @@ Mysql和Cassandra的demo
 
 cluster >= data center >= node
 
-MEM-table 内存中的表
+MEMTable 内存中的表
 
 SSTable  硬盘中的
+
+CommitLog 提交日志是Cassandra中的崩溃恢复机制。每个写操作都写入提交日志。
 
 bloom filter 测试集合中元素知否存在，每次查询后调用该算法
 
