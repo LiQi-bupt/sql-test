@@ -82,3 +82,11 @@ https://www.jianshu.com/p/5540cca823ca
   PRIMARY KEY (`id`)
 ); ```
 
+
+## docker 镜像
+
+1.登录阿里云
+
+2.左侧界面选择镜像加速器，可以看到自己的专属地址
+
+3.修改系统的daemon配置文件 /etc/docker/daemon.json
