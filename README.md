@@ -50,3 +50,15 @@ https://www.jianshu.com/p/5540cca823ca
 
 ```ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';```
 
+然后建个库，我自己起的名字。。
+
+```CREATE DATABASE tony;```
+
+然后建个表，就可以起项目了
+
+```CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+); ```
+
