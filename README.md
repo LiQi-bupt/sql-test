@@ -17,8 +17,11 @@ bloom filter 测试集合中元素知否存在，每次查询后调用该算法
 
 - 读操作：在读操作，Cassandra 从MEM-table得到的值，并检查过滤器绽放找到保存所需数据的相应的SSTable。
 
+更多了解
 
-默认端口说明
+https://www.cnblogs.com/bonelee/p/6278133.html
+
+### 默认端口说明
 
 - 7199 - JMX（8080 pre Cassandra 0.8.xx）
 - 7000 - 节点间通信（如果启用了TLS，则不使用）
