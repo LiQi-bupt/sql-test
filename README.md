@@ -21,11 +21,11 @@ Mysql和Cassandra的demo
 
 ```cqlsh```
 
-先建一个keyspace(database)
+先建一个keyspace(相当于建库)
 
 ```CREATE KEYSPACE test WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};```
 
-建个表user id为主键 还有一个字段是name,一般都是用uuid来当做主键，没办法id自增
+建个表user id为主键 还有一个字段是name,一般都是用代码中生成的uuid来当做主键，没办法id自增
 
 ```CREATE TABLE user ( id text, name text, PRIMARY KEY (id));```
 
