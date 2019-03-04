@@ -19,7 +19,7 @@ bloom filter 测试集合中元素知否存在，每次查询后调用该算法
 
 更多了解
 
-https://www.cnblogs.com/bonelee/p/6278133.html
+https://asyty.iteye.com/blog/1202072
 
 ### 默认端口说明
 
