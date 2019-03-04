@@ -35,3 +35,7 @@ https://www.jianshu.com/p/5540cca823ca
 
 
 ## Mysql by docker
+
+从docker使用mysql需要在容器内部，把权限开放外部使用 
+ 
+```docker run --name tony-mysql -e MYSQL_ROOT_PASSWORD=12345 -d mysql:8.0.15```
