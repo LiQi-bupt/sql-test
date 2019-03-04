@@ -40,13 +40,13 @@ https://www.jianshu.com/p/5540cca823ca
  
 ```docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=123456 -d -p 3306:3306 mysql:8.0.15```
 
-如果直接在navicat会报错，没有权限访问，进入容器修改，mysql的root密码就是123456
+如果直接在navicat会报错，远端没有权限访问，进入容器修改，mysql的root密码就是123456
 
 ```docker exec -it my-mysql bash```
 
 ```mysql -uroot -p123456```
 
-修改USER表中root密码就可以获取到权限
+修改USER表中root密码就远端就可以获取到权限
 
 ```ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';```
 
