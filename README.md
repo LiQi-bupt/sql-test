@@ -3,11 +3,14 @@ Mysql和Cassandra的demo
 
 ## Cassandra by docker
 
-Kownledge based
+### Kownledge based
 
 cluster >= data center >= node
+
 MEM-table 内存中的表
+
 SSTable  硬盘中的
+
 bloom filter 测试集合中元素知否存在，每次查询后调用该算法
 
 - 写操作：节点的每个写入活动都由写在节点中的提交日志捕获。稍后数据将被捕获并存储在存储器表中。每当内存表满时，数据将写入SStable数据文件。所有写入都会在整个集群中自动分区和复制。Cassandra会定期整合SSTables，丢弃不必要的数据。
